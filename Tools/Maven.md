@@ -47,6 +47,44 @@
 
 - mvn verify → Runs checks and integration tests to verify that the package is valid.
 
+### Maven Plugins
+
+- Maven Clean Plugin
+  - Purpose: Its main function is to remove files that were generated during the build process.
+  - Default Action: By default, it achieves this by deleting the /target directory from the project's root folder.
+- Maven Compiler Plugin
+  - Goals: It has two goals, which are compiler:compile and compiler:testCompile.
+  - Java Version: The default source and target language levels are set to Java 1.6, though the Apache team recommends setting these values explicitly.
+- Maven Resources Plugin
+  - Purpose: It is designed to copy a project's resources into an output directory, which is typically the target directory.
+  - Goals: It has three goals: resources:resources, resources:testResources, and resources:copy-resources.
+- Maven Surefire Plugin
+  - Purpose: The Surefire plugin is used to execute the unit tests for a project.
+  - Supported Frameworks: It supports JUnit 3, JUnit 4, JUnit 5, and TestNG by default.
+- Maven JAR Plugin
+
+  - Purpose: Its function is to build JAR files from the project's compiled artifacts and resources.
+  - Goals: It has two primary goals: jar:jar and jar:test-jar.
+
+- Maven Deploy Plugin
+  - Purpose: This plugin is used to deploy the project's artifacts to remote Maven repositories.
+  - Usage: Deployment is frequently performed in a Continuous Integration (CI) environment, and its configuration is usually part of the Maven POM file.
+- Maven Site Plugin
+  - Lifecycle: It operates within the SITE build lifecycle, which is distinct from the CLEAN and DEFAULT lifecycles used by the other plugins.
+  - Goals: It is a feature-rich plugin with seven goals, including site:site to generate the project's website and site:deploy to deploy it.
+  ````
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <source>17</source>
+            <target>17</target>
+          </configuration>
+        </plugin>
+        ```
+  ````
+
 ### POM
 
 ```
@@ -93,40 +131,3 @@
 - mvn spring-boot:run → (Spring Boot projects only) Runs the application directly without needing to package it first.
 
 - mvn archetype:generate → Creates a new Maven project from a template (archetype).
-
-### POM
-
-```
-  <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.example</groupId>
-    <artifactId>demo-project</artifactId>
-    <version>1.0.0</version>
-    <packaging>jar</packaging>
-
-    <name>Demo Project</name>
-    <description>A sample Maven project</description>
-
-    <properties>
-        <java.version>17</java.version> <!-- You can set this to 8, 11, 17, etc. -->
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-    </properties>
-
-    <dependencies>
-        <!-- Example dependency: JUnit for testing -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.10.0</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-</project>
-
-```
