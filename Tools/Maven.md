@@ -16,6 +16,19 @@
 - **Fat JAR (Uber JAR)** – A single executable JAR that includes all dependencies (commonly used in Spring Boot).
 - **Docker Container** – A lightweight package with the JVM, Java app, and runtime environment.
 
+### Maven Repository
+
+- A Maven repository is a location where Maven stores all the project artifacts (like JARs, dependencies, plugins, metadata, etc.) that it needs for building and running projects.
+- Types
+  - Local
+    - Located on your machine (by default: ~/.m2/repository).
+    - Stores all the dependencies you’ve downloaded once, so you don’t need to fetch them again.
+  - Central
+    - A public repository maintained by the Apache Maven community.
+  - Remote
+    - Custom repositories hosted by organizations, teams, or third-party providers.
+- Repository Search Order => Local --> Remote --> Central
+
 ### Maven Commands
 
 - mvn clean → Cleans the environment by deleting the target/ folder where compiled classes and packaged artifacts are stored.
