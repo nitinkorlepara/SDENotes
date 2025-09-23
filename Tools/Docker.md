@@ -9,3 +9,10 @@
 - **Docker Engine** the code which manages Docker. Creates and run Docker Containers.
 
 ![Docker Engine](/Tools/DockerEngine.png)
+
+### Commands
+
+- **docker ps** --> list all docker iamges running
+- **docker stop XXXXX** --> stop docker image with container ID(XXXXX)
+- **docker buid - t <tag-name->** build docker image
+- **docker run -p <host-port>:<container-port> <image-name>** map host port to a conainer port 

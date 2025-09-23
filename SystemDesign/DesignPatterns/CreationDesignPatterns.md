@@ -8,6 +8,35 @@
   - Singleton
   - Builder
 
+### Singleton
+
+- This ensures that a class has only one instance, while providing a global access point to this instance.
+
+  ```
+  //Single Threaded
+  public final class Singleton {
+      private static Singleton instance;
+      public String value;
+
+      private Singleton(String value) {
+          // The following code emulates slow initialization.
+          try {
+              Thread.sleep(1000);
+          } catch (InterruptedException ex) {
+              ex.printStackTrace();
+          }
+          this.value = value;
+      }
+
+      public static Singleton getInstance(String value) {
+          if (instance == null) {
+              instance = new Singleton(value);
+          }
+          return instance;
+      }
+  }
+  ```
+
 ### Prototype
 
 - to create more instance of class that has to be created we could use prototype pattern
