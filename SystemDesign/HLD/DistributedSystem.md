@@ -22,6 +22,12 @@ The most important functions of distributed computing are:
 - **Availability** - System should be available at all times
 - **Partition tolerance** - even if one partition fails,system should be responsive
 
+#### Architecture
+
+- a cluster is defined as a group of nodes working together and configured in such a way that they appear as a single system.
+  - Master Slave Architecture
+  - Master Master Architecture
+
 #### Cache
 
 - temporary storage with high read speeds.
@@ -30,8 +36,6 @@ The most important functions of distributed computing are:
   - Write through -> updated data is written to both database and ache at the same time
   - Write Around -> updated data is written to database first and then to cache
   - write back -> cache is updated first and then the database in specified time intervals
-
--
 
 #### Scaling in Distributed System
 
@@ -50,3 +54,5 @@ The most important functions of distributed computing are:
 - [CAP](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
 - [SOA](https://www.ibm.com/think/topics/soa#:~:text=SOA%2C%20or%20service%2Doriented%20architecture,perform%20deep%20integration%20each%20time)
 - [Microservices](https://microservices.io/)
+
+- [Distributd System Architecture](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)

@@ -7,20 +7,32 @@
 
 ### Application Properties
 
-# H2 in-memory database
+```
+    #H2 in-memory database
+    spring.datasource.url=jdbc:h2:mem:testdb
+    spring.datasource.driverClassName=org.h2.Driver
+    spring.datasource.username=sa
+    spring.datasource.password=
 
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
+    #H2 Console (web UI)
+    spring.h2.console.enabled=true
+    spring.h2.console.path=/h2-console
 
-# H2 Console (web UI)
+    #JPA / Hibernate settings
+    spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=true
+```
 
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2-console
+### hibernate
 
-# JPA / Hibernate settings
+```
+    @GeneratedValue(generator ="UUID")
+    @GenericGenerator(name="UUID", stratetgy = "org.hibernate.id.UUIDGenerator")
 
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+
+    or a simple
+    @UUIDGenerator
+```
+
+![hibernate DDL](/FrameWorks/HibernateDDL.png)
