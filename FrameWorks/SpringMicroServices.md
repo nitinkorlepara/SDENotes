@@ -20,8 +20,30 @@
 - Types
   - Core Concerns - Primary Functionality (business logic)
   - System-wide Concerns( logging, security)
-    ![CCS](/Frameworks/CrossCuttingConcerns.png)
+  - ![CCS](/Frameworks/CrossCuttingConcerns.png)@Component
+
+```
+    // Example code for Simple AOP
+    @Aspect
+    public class LoggingAspect {
+    @After("execution(_ com.course.demo.._(..))")
+    public void adviceAfter(JoinPoint joinPoint){
+    MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
+    String methodName = methodSignature.getName();
+    System.out.println("Exiting the method "+ methodName);
+    }
+    @Before("execution(_ com.course.demo.._(..))")
+    public void adviceBefore(JoinPoint joinPoint){
+    MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
+    String className = methodSignature.getDeclaringType().getSimpleName();
+    String methodName = methodSignature.getName();
+    System.out.println("Inside class " + className);
+    System.out.println("Entering the method " + methodName);
+    }
+    }
+
+```
 
 ### References
 
--
+- [JoinPoint and PointCut](https://stackoverflow.com/questions/15447397/spring-aop-whats-the-difference-between-joinpoint-and-pointcut)

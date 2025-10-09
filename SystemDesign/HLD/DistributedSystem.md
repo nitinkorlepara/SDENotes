@@ -41,10 +41,10 @@ The most important functions of distributed computing are:
 
 - Vertical
   - Adding more resources to the existing server
-  - ![Vertical Scaling](/SystemDesign/hld/Images/VerticalScaling.png)
+  - ![Vertical Scaling](/SystemDesign/HLD/Images/VerticalScaling.png)
 - Horizontal
   - decentralising your server and adding more machines
-  - ![Horizontal Scaling](/SystemDesign/hld/Images/HorizontalScaling.png)
+  - ![Horizontal Scaling](/SystemDesign/HLD/Images/HorizontalScaling.png)
 
 #### Links
 
