@@ -40,18 +40,18 @@
 ### Prototype
 
 - to create more instance of class that has to be created we could use prototype pattern
-- ![Prototype](/SystemDesign/DesignPatterns/Prototype.png)
+- ![Prototype](/SystemDesign/LLD/Prototype.png)
 
 ### Simple Factory
 
 - move the simple instantiation logic to a separate class and most commonly to a static method of this class.
 - Example : java.text.NumberFormat has getInstance method
-- ![NumberFormat](/SystemDesign/DesignPatterns/NumberFormat.png)
+- ![NumberFormat](/SystemDesign/LLD/NumberFormat.png)
 
 ### Factory Method
 
 - provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
-- ![Factory Method](/SystemDesign/DesignPatterns/FactoryMethod.png)
+- ![Factory Method](/SystemDesign/LLD/FactoryMethod.png)
 
 ### Abstract Factory
 
