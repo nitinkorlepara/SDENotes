@@ -1,6 +1,5 @@
-# MICROSERVICES
+# 12 Factor Principles
 
-- 12 Factor Principles
   - Codebase
   - Dependency
   - Configuration
@@ -13,20 +12,6 @@
   - Dev\Prod parity
   - Logs
   - Admin Process
-
-#### Saga Pattern
-
-- microservices architecture pattern which is used for communication across various services in the architecture
-- Orchestrator
-  - a centralized service
-- Choreography
-
-#### Communication
-
-- Synchronous Communication
-  - Caller wait suntil a response is available
-- Asynchronous Communication
-  - removes the need to wait for a response
 
 #### Links
 
