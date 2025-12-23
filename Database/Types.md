@@ -24,6 +24,7 @@
 
 - Specialized for handling time-stamped data.
 - Useful for monitoring and IoT applications.
+- data associated with timestamp
 
 ### Networking Database
 
