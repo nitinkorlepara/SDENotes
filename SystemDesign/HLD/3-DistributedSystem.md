@@ -32,7 +32,7 @@ The most important functions of distributed computing are:
 ### CAP Theorem
 - **Consistency** - Giving correct result at any given time
 - **Availability** - System should be available at all times
-- **Partition tolerance** - even if one partition fails,system should be responsive
+- **Partition tolerance** - even if one partition fails,system should be responsive ( must )
 
 ### Scaling in Distributed System
 

@@ -6,7 +6,7 @@
 - Designing for scalability, reliability, and maintainability
 - Creating architecture diagrams and documentation
 
-- **Event Stroming** : explore complex business domains
+**Event Stroming** : explore complex business domains
   - Invite right people ( include domain and technical experts)
   - provide modeling space
   - Explore domain events
@@ -15,21 +15,30 @@
   - Events
     - Domain Events
     - External System Events
-    - USer Journey
+    - User Journey
     - Business Rules
     - Pain Points in the design
 - Example of Order Processing in Retail Store
 - ![EventStromingExample](/SystemDesign/HLD/Images/EventStromingExample.png)
 
-- **Service Identification**
+**Service Identification**
 - Criteria
   - Rate of change
   - scalablity
   - LIfecycle management
   - isolated failure
 
+ **Back of the envelope estiamtion**
+  - all estimation technique used to estimate system capacity and performance metrics (QPS, storage, bandwidth, latency)
+  - Helps in identifying potential bottlenecks
+  - Guides infrastructure and resource planning
+  - Example: Estimate daily active users → requests per second → server capacity needed
+
+
 # References
 
 - [1 Event Stroming](https://www.lucidchart.com/blog/ddd-event-storming)
 - [2 Event Stroming](https://ziobrando.blogspot.com/2013/11/introducing-event-storming.html#.VbhQTn-9KK1)
 - [3 Event Stroming](https://sch3lp.github.io/2014/07/12/event-storming-exercise/)
+- [latency numbers](https://gist.github.com/jboner/2841832)
+- [latency numbers](https://colin-scott.github.io/personal_website/research/interactive_latency.html)
