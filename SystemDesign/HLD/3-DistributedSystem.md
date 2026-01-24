@@ -43,6 +43,7 @@ The most important functions of distributed computing are:
   - decentralising your server and adding more machines
   - ![Horizontal Scaling](/SystemDesign/HLD/Images/HorizontalScaling.png)
 
+
 ### References
 
 - [Types of Distributed Systems](https://www.confluent.io/learn/distributed-systems/)

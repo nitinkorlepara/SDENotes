@@ -19,7 +19,7 @@
 
 ### Service-Oriented Architecture
 
-- Structured Apps into isolated, reusable services that communicate thrugh common communication standards.
+- Structured Apps into isolated, reusable services that communicate through common communication standards.
 - service interface provide loose coupling between services
 - Services are exposed using standard protocols such as SOAP,REST to exhange data.
   - ESB (Enterprise Service Bus) transformations of data models, handles connectivity, performs routing.
