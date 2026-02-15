@@ -29,20 +29,6 @@ The most important functions of distributed computing are:
     - Load balancing: Distribute the tasks to the available resources in an efficient manner
     - Partitioning schemes: Divide the data into logical partitions for easier access
 
-### CAP Theorem
-- **Consistency** - Giving correct result at any given time
-- **Availability** - System should be available at all times
-- **Partition tolerance** - even if one partition fails,system should be responsive ( must )
-
-### Scaling in Distributed System
-
-- Vertical
-  - Adding more resources to the existing server
-  - ![Vertical Scaling](/SystemDesign/HLD/Images/VerticalScaling.png)
-- Horizontal
-  - decentralising your server and adding more machines
-  - ![Horizontal Scaling](/SystemDesign/HLD/Images/HorizontalScaling.png)
-
 
 ### References
 

@@ -24,6 +24,15 @@
 - Services are exposed using standard protocols such as SOAP,REST to exhange data.
   - ESB (Enterprise Service Bus) transformations of data models, handles connectivity, performs routing.
 
+### Event-Driven Architecture
+- Event-driven architecture decouples services through asynchronous event communication.
+- Services emit events when state changes occur; other services listen and react independently.
+- Improves scalability, responsiveness, and system resilience.
+- Enables real-time data processing and complex event workflows.
+  - Event Producers (emit events)
+  - Event Brokers (message queues, pub-sub systems)
+  - Event Consumers (process events)
+
 ### References
 
 - [Monolithic Architecture](https://www.techtarget.com/whatis/definition/monolithic-architecture#:~:text=A%20monolithic%20architecture%20is%20the,and%20unable%20to%20be%20changed.)
